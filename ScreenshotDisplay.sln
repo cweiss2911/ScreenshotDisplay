@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenshotDisplay", "ScreenshotDisplay\ScreenshotDisplay.csproj", "{545A1E1C-9D63-4789-A2DD-FB3EA049F59D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScreenshotDisplay", "ScreenshotDisplay\ScreenshotDisplay.csproj", "{6C0FB988-0A01-49DD-9138-9A969628C972}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{545A1E1C-9D63-4789-A2DD-FB3EA049F59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{545A1E1C-9D63-4789-A2DD-FB3EA049F59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{545A1E1C-9D63-4789-A2DD-FB3EA049F59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{545A1E1C-9D63-4789-A2DD-FB3EA049F59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0FB988-0A01-49DD-9138-9A969628C972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0FB988-0A01-49DD-9138-9A969628C972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0FB988-0A01-49DD-9138-9A969628C972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0FB988-0A01-49DD-9138-9A969628C972}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
