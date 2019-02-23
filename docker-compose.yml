@@ -1,9 +1,9 @@
 ﻿version: "3.2"
 # docker-compose build
 # docker-compose up -d
- 
+# docker container run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 # docker exec -it screenshotbackend /bin/bash
-
+# docker run --name holdup --restart always -v "C:/Temp:/test" -v /var/run/docker.sock:/var/run/docker.sock:ro shaynesweeney/holdup
 
 networks:
   screenshotting:
@@ -18,7 +18,6 @@ services:
       - "82:80"
     networks:
       - screenshotting
-    restart: always  
     depends_on: 
       - "backend"  
   backend:
@@ -30,7 +29,6 @@ services:
       - screenshotting 
    # ports:
    #   - "50658:80"  
-    restart: always  
     volumes:
       - type: bind
         source: C:/Screenshots
