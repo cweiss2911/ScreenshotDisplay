@@ -1,0 +1,14 @@
+﻿FROM microsoft/dotnet:2.1-sdk AS build
+
+WORKDIR /app
+
+COPY . ./
+RUN dotnet restore ScreenshotDisplay/*.csproj 
+RUN dotnet publish ScreenshotDisplay/*.csproj -c Release -o out
+
+# build runtime image
+FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+WORKDIR /app
+COPY --from=build /app/ScreenshotDisplay/out .
+EXPOSE 80/tcp
+ENTRYPOINT ["dotnet", "ScreenshotDisplay.dll"]
